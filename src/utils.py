@@ -1,4 +1,5 @@
 import pygame
+import time
 
 def show_score(game_window, score, choice, color, font, size):
     # creating font object score_font
@@ -36,7 +37,7 @@ def game_over(game_window, score, window_x, window_y, red):
 
     # after 2 seconds we will quit the
     # program
-    pygame.time.sleep(2)
+    time.sleep(2)
 
     # deactivating pygame library
     pygame.quit()
